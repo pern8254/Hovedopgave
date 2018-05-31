@@ -1,0 +1,813 @@
+/*
+Theme Name: Smooth Robotics Theme 
+Author: Pernille Søndergaard
+Author URI: http://portfolio.pernillesondergaard.dk
+Description: Smooth Robotics homepage theme. Written by Pernille Søndergaard. Designet by Signe Slente Vive, Line Brygger Hansen and Pernille Søndergaard. 
+Version: 0.1
+*/
+
+/* Generel */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+a:hover {
+    text-decoration: none; 
+    color: #cc6633;
+}
+
+.push_down {
+    margin-top: 140px;
+}
+
+/* Generel end */
+
+/* Navigation 1 */
+#nav {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+}
+
+.background {
+    background-color: #176588;
+    z-index: 9999;
+    transition: .3s;
+}
+
+#logo {
+    width: 110px; 
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    margin: 10px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style: none; 
+    margin-bottom: 10px;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+}
+
+.secondary_menu {
+    border-bottom: 1px solid #fff;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 180px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.main_menu {
+    margin: 20px;
+}
+
+.main_menu li a {
+    margin-left: 30px;
+}
+/* Navigation 1 end */
+
+/* Navigation 2 */
+#nav_2 {
+    background-color: #176588;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+}
+/* Navigation 2 end */
+
+
+/* Homepage */
+#home .row {
+    margin: 0px;
+}
+
+#home .col-sm-12 {
+    padding: 0px;
+}
+
+.homepage_img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+    
+.hero-text h1 {
+    font-size: 72px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.cta_btn {
+  border-radius: 6px;
+  background-color: #cc6633;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 60px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.cta_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.cta_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.cta_btn:hover {
+    background-color: #dd7733;
+}
+
+.cta_btn:hover span {
+    padding-right: 25px;
+    color: #fff;
+}
+
+.cta_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.col-sm-4 {
+    padding: 0px; 
+    margin: 30px 0px;
+}
+
+.video_frontpage {
+    margin-top: 50px;
+}
+
+.text_frontpage h2 {
+    margin-bottom: 30px;
+}
+
+.text_frontpage {
+    margin-top: 40px;
+}
+
+.homepage_icon {
+    width: 200px;
+    margin: 20px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icons {
+    text-align: center;
+}
+
+#homepage_info {
+    background-color: #dddfe1;
+    padding: 50px 300px;
+}
+
+#homepage_info h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#news {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#news ul {
+    list-style: none; 
+    padding: 0px;
+}
+
+#news li {
+    display: inline-grid;
+}
+
+#news li:not(:first-child) {
+    padding-left: 50px; 
+}
+
+.news_img {
+    text-align: center;
+}
+
+#become_dis {
+    background-color: #dddfe1;
+    padding: 50px 300px;
+    text-align: center;
+}
+
+#become_dis h2 {
+    margin-bottom: 10px;
+}
+
+#become_dis h5 {
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    width: 70%; 
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    border: none; 
+    border-radius: 6px;
+    background-color: #cc6633; 
+    padding: 10px 60px;
+    color: #fff; 
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #dd7733;
+}
+
+/* Homepage end */
+
+/* News */
+.home h1 {
+    text-align: center;
+}
+
+.pager {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.pager li {
+    display: inline-block;
+}
+
+.pager li a {
+    color: #fff;
+    padding: 10px 20px; 
+    background-color: #cc6633;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.blog-post:not(:first-child) {
+    margin: 0px;
+}
+
+.blog-post {
+    padding: 50px;
+    border-bottom: 1px solid #6a6967;
+}
+
+#blog_entry {
+    min-height: 400px;
+}
+
+.thumbnail {
+    margin: 10px 0px;
+}
+/* News end */
+
+/* Product page */
+.product h1 {
+    margin-top: 40px;
+}
+
+.col_product {
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.product_img {
+    width: 100%;   
+    padding: 10px 0px;
+}
+
+.product_text {
+    background-color: #dddef1;
+    margin-top: 10px;
+    padding: 20px 15px; 
+    text-align: center;
+}
+
+.btn {
+  border-radius: 6px;
+  background-color: #cc6633;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 60px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+    margin-bottom: 30px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #dd7733;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+    color: #fff;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* Product page end */
+
+/* Distributor */
+
+.distributor_map {
+    width: 100%;
+    padding: 30px;
+}
+
+.distributor h5 {
+    margin-bottom: 20px;
+}
+
+.distributor {
+    background-color: #dddef1;
+    padding: 20px 15px;
+}
+/* Distributor end */
+
+/* About */
+.video {
+    width: 100%;
+}
+
+.video_img {
+    width: 50%;
+    margin: 20px 120px;
+}
+
+.about_img {
+    width: 40%;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.vmv {
+    margin-top: 40px;
+}
+
+.about_last {
+    margin-bottom: 50px;
+}
+
+/* About end */
+
+/* Contact */
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact_map {
+    width: 600px;
+    height: 550px;
+}
+
+.team_img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.team {
+    margin-top: 50px;
+}
+/* Contact end */
+
+/* Career */
+.half_page {
+    width: 100%;
+}
+
+.career #col_1 {
+    padding: 0px 100px;
+}
+
+.career #col_1 h1 {
+    margin-bottom: 30px;
+}
+
+.career img {
+    height: 100vh;
+    object-fit: cover;
+}
+/* Career end */
+
+/* Press */
+.press #col_1 {
+    padding: 0px 100px;
+}
+
+.press_logo_img {
+    width: 400px;
+}
+
+.press_img {
+    width: 250px;
+    padding: 5px;
+}
+
+/* Press end */
+
+/* Footer */
+footer {
+    bottom: 0;
+    right: 0;
+    background-color: #176588;
+    color: #fff;
+    padding: 50px 50px 0px 50px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter h4 {
+    margin-bottom: 30px;
+}
+
+.footer_one {
+    text-align: left; 
+    padding-right: 50px;
+}
+
+.footer_two {
+    text-align: center;
+}
+
+.footer_three {
+    text-align: right;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+
+.some_icon {
+    width: 60px;
+}
+
+.text_copy {
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+/* Footer end */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    /* Homepage */
+    .hero-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 24px;
+    }
+    
+    .hero-text p {
+    font-size: 16px;
+    }
+
+    .cta_btn {
+      border-radius: 6px;
+      background-color: #cc6633;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      padding: 15px 60px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .text_frontpage {
+    margin-top: 0px;
+    }
+    
+    #homepage_info {
+    background-color: #dddfe1;
+    padding: 50px 80px;
+    }  
+    
+    #news li:not(:first-child) {
+    padding-left: 100px; 
+    }
+    
+    #become_dis {
+    padding: 50px 80px;
+    text-align: center;
+    }
+    
+    /* Product */
+    .product h1 {
+    margin-top: 0px;
+    }
+    
+    /* About */
+    .video_img {
+    width: 50%;
+    margin: 20px 80px;
+    }
+    
+    .vmv {
+    margin-top: 20px;
+    }
+    
+    /* Contact */
+    .contact_map {
+    width: 260px;
+    height: 600px;
+    }
+    
+    /* Footer */
+    input[type=text] {
+    width: 100%; 
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    }
+    
+    input[type=submit] {
+    border: none; 
+    border-radius: 6px;
+    background-color: #cc6633; 
+    padding: 10px 60px;
+    color: #fff; 
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .col-sm-4 {
+    margin: 10px;
+    }
+    
+    .push_down {
+    margin-top: 80px;
+    }
+    
+    /* Navigation */
+    #logo {
+    width: 50px; 
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    margin: 5px 15px;
+    }
+
+    nav {
+        text-align: right;
+    }
+
+    nav ul {
+        list-style: none; 
+        margin-bottom: 5px;
+        padding-left: 0px;
+    }
+    
+    nav li {
+        padding-right: 10px;
+    }
+
+    .secondary_menu {
+        border-bottom: 1px solid #fff;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-left: 80px;
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .main_menu {
+        margin: 5px 15px 0px 0px;
+    }
+
+    .main_menu li a {
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    
+    /* Homepage */
+    .hero-text {
+    position: absolute;
+    top: 65%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    }
+    
+    .hero-text h1 {
+    font-size: 16px;
+    }
+    
+    .hero-text p {
+    font-size: 12px;
+    }
+    
+    .cta_btn {
+      border-radius: 6px;
+      background-color: #cc6633;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      padding: 10px 15px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .video_frontpage {
+    margin-top: 20px;
+    }
+    
+    .text_frontpage {
+    margin-top: 10px;
+    }
+    
+    .text_frontpage h2 {
+    font-size: 25px;
+    margin-bottom: 20px; 
+    }
+    
+    #homepage_info {
+    padding: 30px 20px;
+    }
+    
+    #homepage_info h2 {
+    font-size: 25px;    
+    }
+    
+    #news li:not(:first-child) {
+    padding-left: 20px; 
+    }
+    
+    #become_dis {
+    padding: 30px 20px;
+    }
+    
+    /* Product */
+    .product h1 {
+    font-size: 25px;    
+    }
+    
+    /* Distributor */
+    .distributor_text {
+    margin: 15px;
+    }
+    
+    .distributor_text h1 {
+    font-size: 25px;
+    }
+    
+    /* News */
+    .home h1 {
+    font-size: 25px;
+    }
+    
+    .blog-post {
+    padding: 15px;
+    }
+    
+    /* About */
+    .about h2 {
+    font-size: 25px;
+    }
+    
+    /* Contact */
+    .contact_map {
+    width: 395px;
+    height: 400px;
+    }
+    
+    /* Footer */
+    footer {
+    padding: 30px 15px 0px 15px;
+    }
+    
+    .footer_one {
+    text-align: left; 
+    padding-right: 0px;
+    }
+
+    .footer_two {
+    text-align: left;
+    }
+
+    .footer_three {
+    text-align: left;
+    }
+    
+    footer ul {
+    list-style: none;
+    padding-left: 0px; 
+    }
+    
+}
